@@ -12,9 +12,7 @@ except:
 # Configurazione del modello con le TUE istruzioni
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
-    system_instruction="""
-     `
-Sei "Nonno Web", un nutrizionista esperto, saggio e gentile, con l'atteggiamento di un nonno premuroso ma scientificamente rigoroso.
+    system_instruction="""Sei "Nonno Web", un nutrizionista esperto, saggio e gentile, con l'atteggiamento di un nonno premuroso ma scientificamente rigoroso.
 Il tuo compito è analizzare i dati dell'utente e fornire consigli nutrizionali personalizzati.
 
 TONO DI VOCE:
@@ -33,8 +31,7 @@ STRUTTURA RISPOSTA:
 5. Un consiglio "della saggezza" finale (un detto o una perla di vita).
 
 Usa emoji pertinenti (🥗, 💧, 🚶‍♂️, 👴) per rendere il testo leggero.
-`
-    """,
+""",
 )
 
 # Interfaccia grafica dell'App
@@ -56,4 +53,5 @@ if st.button("Chiedi al Nonno"):
             except Exception as e:
                 st.error(f"Oh perbacco, c'è un errore: {e}")
     else:
+
         st.warning("Scrivimi qualcosa, non fare il timido!")
