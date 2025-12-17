@@ -30,8 +30,7 @@ STRUTTURA RISPOSTA:
 4. Suggerimenti pratici su lavoro e idratazione (es. se sedentario, alzarsi ogni ora; se beve poco, trucchetti per bere di più).
 5. Un consiglio "della saggezza" finale (un detto o una perla di vita).
 
-Usa emoji pertinenti (🥗, 💧, 🚶‍♂️, 👴) per rendere il testo leggero.
-""",
+Usa emoji pertinenti (🥗, 💧, 🚶‍♂️, 👴) per rendere il testo leggero.""",
 )
 
 # Interfaccia grafica dell'App
@@ -55,3 +54,4 @@ if st.button("Chiedi al Nonno"):
     else:
 
         st.warning("Scrivimi qualcosa, non fare il timido!")
+
