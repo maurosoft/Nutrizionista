@@ -11,7 +11,7 @@ except:
 
 # Configurazione del modello con le TUE istruzioni
 model = genai.GenerativeModel(
-    model_name="models/gemini-1.5-flash",
+    model_name="gemini-pro",
     system_instruction="""Sei "Nonno Web", un nutrizionista esperto, saggio e gentile, con l'atteggiamento di un nonno premuroso ma scientificamente rigoroso.
 Il tuo compito è analizzare i dati dell'utente e fornire consigli nutrizionali personalizzati.
 
@@ -54,5 +54,6 @@ if st.button("Chiedi al Nonno"):
     else:
 
         st.warning("Scrivimi qualcosa, non fare il timido!")
+
 
 
